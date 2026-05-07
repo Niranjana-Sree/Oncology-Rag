@@ -15,7 +15,7 @@ export default function Sidebar({ history, activeId, onNewChat, onHistoryClick, 
       <div className="sidebar-brand">
         <div className="sidebar-logo-row">
           <div className="sidebar-logo-circle">O</div>
-          <span className="sidebar-logo-text">OncologyRAG</span>
+          <span className="sidebar-logo-text">Med Reasoning</span>
         </div>
         <div className="sidebar-status">
           <span className={`status-pulse${backendStatus === 'offline' ? ' status-pulse--offline' : backendStatus === 'checking' ? ' status-pulse--checking' : ''}`} />
@@ -51,7 +51,7 @@ export default function Sidebar({ history, activeId, onNewChat, onHistoryClick, 
         }
       </div>
 
-      <div className="sidebar-footer">OncologyRAG v1.0</div>
+      <div className="sidebar-footer">Med Reasoning v1.0</div>
     </aside>
   );
 }

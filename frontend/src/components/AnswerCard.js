@@ -59,7 +59,7 @@ export default function AnswerCard({ patientAnswer, doctorAnswer, sources = [], 
         <div className="ai-card-header">
           <div className="ai-card-identity">
             <div className="ai-avatar">O</div>
-            <span className="ai-label">OncologyRAG</span>
+            <span className="ai-label">Med Reasoning</span>
           </div>
           <div className="audience-toggle">
             <button

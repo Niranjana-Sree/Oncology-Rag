@@ -14,8 +14,8 @@ export default function Header({ backendStatus, setBackendStatus }) {
   return (
     <div className="header">
       <div className="header-left">
-        <h1 className="header-title">OncologyRAG</h1>
-        <p className="header-subtitle">AI-powered oncology question answering</p>
+        <h1 className="header-title">Med Reasoning</h1>
+        <p className="header-subtitle">AI-powered Medical Question Answering</p>
       </div>
       <div className="header-status">
         <span className={`status-dot ${backendStatus === 'online' ? 'status-dot--online' : backendStatus === 'offline' ? 'status-dot--offline' : 'status-dot--checking'}`} />

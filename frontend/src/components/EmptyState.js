@@ -17,8 +17,8 @@ export default function EmptyState({ onPillClick }) {
   return (
     <div className="empty-state">
       <div className="empty-logo">O</div>
-      <h2 className="empty-title">OncologyRAG</h2>
-      <p className="empty-subtitle">Your AI-powered oncology assistant</p>
+      <h2 className="empty-title">Med Reasoning</h2>
+      <p className="empty-subtitle">Your AI-powered Medical Assistant</p>
       <p className="empty-desc">
         Ask me anything about cancer treatment, medications, or oncology guidelines.
       </p>
