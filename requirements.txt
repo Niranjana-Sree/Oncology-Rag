@@ -1,0 +1,69 @@
+# =============================================================================
+# MedRAG — Python Dependencies (pinned for reproducibility)
+# Install with: pip install -r requirements.txt
+# Python 3.10+ required
+# =============================================================================
+
+# --- Core utilities ---
+python-dotenv==1.0.1
+pydantic==2.7.1
+tqdm==4.66.4
+
+# --- Document parsing ---
+PyPDF2==3.0.1
+python-docx==1.1.2
+beautifulsoup4==4.12.3
+lxml==5.2.2
+
+# --- NLP / Medical NER ---
+spacy==3.7.4
+# scispaCy medical model installed separately (see README Installation Step 4)
+scispacy==0.5.4
+
+# --- Embeddings and reranker ---
+sentence-transformers==3.0.1
+torch==2.3.1
+transformers==4.41.2
+einops==0.8.0
+# nomic embedding requires trust_remote_code=True (handled in embedder.py)
+
+# --- Zero-shot query classification ---
+# facebook/bart-large-mnli loaded via transformers pipeline
+
+# --- Vector database ---
+chromadb==0.5.3
+
+# --- Translation ---
+deep-translator==1.11.4
+
+# --- Anthropic Claude API ---
+anthropic==0.28.0
+
+# --- Evaluation — lexical ---
+nltk==3.8.1
+rouge-score==0.1.2
+
+# --- Evaluation — semantic ---
+bert-score==0.3.13
+# sentence-transformers already listed above (used for SBERT cosine)
+
+# --- Evaluation — system (RAGAS) ---
+ragas==0.1.14
+datasets==2.20.0
+
+# --- API server ---
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+httpx==0.27.0
+
+# --- Database (RL reward storage) ---
+# sqlite3 is part of Python stdlib — no extra package needed
+
+# --- Testing ---
+pytest==8.2.2
+pytest-asyncio==0.23.7
+requests==2.32.3
+
+# --- Utilities ---
+numpy==1.26.4
+pandas==2.2.2
